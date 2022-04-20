@@ -22,7 +22,7 @@ public class HP : MonoBehaviour
     // 当たり判定
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name == "Enemy")    // エネミーとぶつかったとき
+        if (other.gameObject.name == "Enemy"|| other.gameObject.name == "EnemyA")    // エネミーとぶつかったとき
         {
             currentHp -= 10;        // 現在のHPを減らす
             hpSlider.value = currentHp;   // Sliderに現在HPを適用
